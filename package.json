@@ -3,12 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://zetton110.github.io/slack-embed-for-backlog-chrome-extention-support",
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
     "build": "vite build && cp -r dist docs",
     "rebuild": "vite build && rm -R docs && cp -r dist docs",
-    "git": "git add . && git commit && git push origin main"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -24,6 +26,7 @@
     "eslint-plugin-react": "^7.37.1",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.13",
+    "gh-pages": "^6.2.0",
     "globals": "^15.11.0",
     "vite": "^5.4.9"
   },
