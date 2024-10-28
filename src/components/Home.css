@@ -37,6 +37,11 @@
   padding: 2em;
 }
 
+.card-image {
+  width: 400px;
+  border-radius: 10px;
+}
+
 .read-the-docs {
   color: #888;
 }
