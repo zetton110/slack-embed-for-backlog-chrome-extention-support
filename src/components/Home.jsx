@@ -6,7 +6,6 @@ import './Home.css'
 function Home() {
   const navigate = useNavigate();
 
-  // ボタンを押した時の遷移処理
   const goToGetStarted = () => {
     navigate('/get-started');
   };
